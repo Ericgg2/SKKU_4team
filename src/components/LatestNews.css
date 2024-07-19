@@ -1,0 +1,21 @@
+LatestNews.css .related-articles-enter {
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.related-articles-enter-active {
+  max-height: 1000px; /* 충분히 큰 값으로 설정 */
+  opacity: 1;
+}
+
+.related-articles-exit {
+  max-height: 1000px; /* 충분히 큰 값으로 설정 */
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.related-articles-exit-active {
+  max-height: 0;
+  opacity: 0;
+}

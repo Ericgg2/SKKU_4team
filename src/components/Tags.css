@@ -1,0 +1,56 @@
+/* Tags.css */
+.parent-tag {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.parent-tag-button {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.child-tag {
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  background-color: #f9fafb; /* 백그라운드 색상 추가 */
+  padding: 1rem; /* 패딩 추가 */
+  border-radius: 0.5rem; /* 둥근 모서리 추가 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+  width: 100%;
+}
+
+.child-tag-title {
+  margin-bottom: 1rem;
+}
+
+.child-tag-article {
+  margin-bottom: 1rem;
+  background-color: #ffffff; /* 백그라운드 색상 추가 */
+  padding: 1rem; /* 패딩 추가 */
+  border-radius: 0.5rem; /* 둥근 모서리 추가 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms, transform 500ms;
+}
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 500ms, transform 500ms;
+}
